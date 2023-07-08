@@ -15,9 +15,9 @@ def home():
             error_message = 'Wrong password combination'
             return render_template('error.html', message = error_message)
 
-@app.route('/work', methods = ['GET'])
+@app.route('/structure', methods = ['GET'])
 def work():
-    return render_template('work.html')
+    return render_template('structure.html')
 
 if __name__ == '__main__':
     app.run(debug = True)
